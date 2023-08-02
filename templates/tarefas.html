@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarefas</title>
+</head>
+<body>
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+     <script>
+    var messages = {{ messages | safe }};
+    for (var i=0; i<messages.length; i++) {
+    alert(messages[i]);
+  }
+    </script>
+    {% endif %}
+    {% endwith %}
+    <form action="{{url_for('tarefas')}}" method="POST">
+        <label>TÍTULO: </label><br><br>
+        <input type="text" name="titulo" placeholder="Digite o título da sua tarefa "><br><br>
+        <label>HORÁRIO: </label><br><br>
+        <input type="time" name="hora" placeholder="Digite a hora que a tarefa deverá ser realizada "><br><br>
+        <label>PRAZO: </label><br><br>
+        <input type="date" name="prazo" placeholder="Adcione o prazo de sua tarefa:  "><br><br>
+        <label for="Prioridade">Defina a prioridade:</label>
+    <select name="prioridade" id="prioridade">
+        <option value="alta">Alta</option>
+        <option value="media">Media</option>
+        <option value="baixa">Baixa</option>
+        <option value="indefinido">Indefinido</option>
+    </select>
+        <input type="submit" value="TAREFA CADASTRADA"><br><br>
+    </form>
+
+
+</body>
+</html>

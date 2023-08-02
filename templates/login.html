@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+     <script>
+    var messages = {{ messages | safe }};
+    for (var i=0; i<messages.length; i++) {
+    alert(messages[i]);
+  }
+    </script>
+    {% endif %}
+    {% endwith %}
+
+    <form action="{{url_for('login')}}" method="POST">
+        <label>EMAIL: </label><br><br>
+        <input type="email" name="email" placeholder="Digite seu email: "><br><br>
+        <label>SENHA: </label><br><br>
+        <input type="password" name="senha" placeholder="Digite sua senha: "><br><br>
+        <br><br>
+        <input type="submit" value="ENTRAR"><br><br>
+    </form>
+
+
+</body>
+</html>
