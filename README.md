@@ -18,8 +18,8 @@ dicionário de funções:
 - secrets: cria numeros aleatórios de chave
 - request: vê qual é o código de destaque (GET ou POST)
 
-<a href="https://flask-login.readthedocs.io/en/latest/">funções de login</a>
-<a href="https://flask-login.readthedocs.io/en/latest/](https://github.com/pallets/werkzeug/blob/main/src/werkzeug/security.py)https://github.com/pallets/werkzeug/blob/main/src/werkzeug/security.py">werkzeug.security</a>
-<a href="https://flask-login.readthedocs.io/en/latest/](https://docs.python.org/3/library/secrets.html)https://docs.python.org/3/library/secrets.html">Documentação secrets</a>
+<a href="https://flask-login.readthedocs.io/en/latest/">funções de login</a>,
+<a href="https://flask-login.readthedocs.io/en/latest/](https://github.com/pallets/werkzeug/blob/main/src/werkzeug/security.py)https://github.com/pallets/werkzeug/blob/main/src/werkzeug/security.py">werkzeug.security</a>,
+<a href="https://flask-login.readthedocs.io/en/latest/](https://docs.python.org/3/library/secrets.html)https://docs.python.org/3/library/secrets.html">Documentação secrets</a>,
 <a href="https://www.codementor.io/@overiq/basics-of-flask-fzvh8ueed">Básico de flask</a>
 
