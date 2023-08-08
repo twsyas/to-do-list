@@ -1,6 +1,6 @@
 # to-do-list
 
-dicionário de funções:
+dicionário de funções no flask:
 - render_template: renderizar template;
 - redirect: redirecionar os sites;
 - flash: notificações;
