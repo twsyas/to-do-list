@@ -1,6 +1,12 @@
 # to-do-list
 
-dicionário de funções no flask:
+## FLASK FRAMEWORK:
+<a href="https://flask-login.readthedocs.io/en/latest/">funções de login</a>,
+<a href="https://flask-login.readthedocs.io/en/latest/](https://github.com/pallets/werkzeug/blob/main/src/werkzeug/security.py)https://github.com/pallets/werkzeug/blob/main/src/werkzeug/security.py">werkzeug.security</a>,
+<a href="https://flask-login.readthedocs.io/en/latest/](https://docs.python.org/3/library/secrets.html)https://docs.python.org/3/library/secrets.html">Documentação secrets</a>,
+<a href="https://www.codementor.io/@overiq/basics-of-flask-fzvh8ueed">Básico de flask</a>
+
+### DICIONARIO DE FUNÇÕES NO FLASK:
 - render_template: renderizar template;
 - redirect: redirecionar os sites;
 - flash: notificações;
@@ -18,8 +24,6 @@ dicionário de funções no flask:
 - secrets: cria numeros aleatórios de chave
 - request: vê qual é o código de destaque (GET ou POST)
 
-<a href="https://flask-login.readthedocs.io/en/latest/">funções de login</a>,
-<a href="https://flask-login.readthedocs.io/en/latest/](https://github.com/pallets/werkzeug/blob/main/src/werkzeug/security.py)https://github.com/pallets/werkzeug/blob/main/src/werkzeug/security.py">werkzeug.security</a>,
-<a href="https://flask-login.readthedocs.io/en/latest/](https://docs.python.org/3/library/secrets.html)https://docs.python.org/3/library/secrets.html">Documentação secrets</a>,
-<a href="https://www.codementor.io/@overiq/basics-of-flask-fzvh8ueed">Básico de flask</a>
+## BOOTSTRAP FRAMEWORK:
+<a href="https://getbootstrap.com.br/docs/4.1/getting-started/introduction/)https://getbootstrap.com.br/docs/4.1/getting-started/introduction/">Bootstrap</a>
 
