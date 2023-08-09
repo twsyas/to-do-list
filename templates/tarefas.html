@@ -1,38 +1,42 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tarefas</title>
-</head>
-<body>
-    {% with messages = get_flashed_messages() %}
-    {% if messages %}
-     <script>
-    var messages = {{ messages | safe }};
-    for (var i=0; i<messages.length; i++) {
-    alert(messages[i]);
-  }
-    </script>
-    {% endif %}
-    {% endwith %}
-    <form action="{{url_for('tarefas')}}" method="POST">
-        <label>TÍTULO: </label><br><br>
-        <input type="text" name="titulo" placeholder="Digite o título da sua tarefa "><br><br>
-        <label>HORÁRIO: </label><br><br>
-        <input type="time" name="hora" placeholder="Digite a hora que a tarefa deverá ser realizada "><br><br>
-        <label>PRAZO: </label><br><br>
-        <input type="date" name="prazo" placeholder="Adcione o prazo de sua tarefa:  "><br><br>
-        <label for="Prioridade">Defina a prioridade:</label>
-    <select name="prioridade" id="prioridade">
-        <option value="alta">Alta</option>
-        <option value="media">Media</option>
-        <option value="baixa">Baixa</option>
-        <option value="indefinido">Indefinido</option>
-    </select>
-        <input type="submit" value="TAREFA CADASTRADA"><br><br>
-    </form>
+{% extends "base.html" %}
+{% block conteudo%}
+
+<form action="{{ url_for('tarefas') }}" method="POST">
+    <input type="text" name="tarefa" placeholder="Tarefa: ">
+    <input type="datetime" name="prazo" placeholder="prazo">
+    <div class="input-radio">
+        <input type="radio" name="prioridade" value="ALTA">
+        <label for="ALTA">ALTA</label>
+        <input type="radio" name="prioridade" value="MÉDIA" >
+        <label for="MÉDIA">MÉDIA</label>
+        <input type="radio" name="prioridade" value="BAIXA">
+        <label for="BAIXA">BAIXA</label>
+    </div>
+    <input type="submit" value="Cadastrar Tarefa">
+</form>
+
+<br><br><br><br><br>
+
+<table border="1">
+    <tr>
+        <th>ID da Tarefa</th>
+        <th>Título da Tarefa</th>
+        <th>Data de Registro</th>
+        <th>Prazo de Finalização</th>
+        <th>Grau de Prioridade</th>
+        <th>  </th>
+    </tr>
+{% for tarefa in tarefas %}
+<tr>
+    <td>{{ tarefa.id_tarefa }}</td>
+    <td>{{ tarefa.titulo_tarefa }}</td>
+    <td>{{ tarefa.hora_tarefa }}</td>
+    <td>{{ tarefa.prazo_tarefa }}</td>
+    <td>{{ tarefa.prioridade }}</td>
+    <td><a href="{{ url_for('deletar_tarefa', id=tarefa.id_tarefa) }}" style="text-decoration: none; color:red;">[ x ]</a></td>
+</tr>
+{% endfor %}
+</table>
 
 
-</body>
-</html>
+{% endblock %}
