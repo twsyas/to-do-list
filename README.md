@@ -1,5 +1,5 @@
 # to-do-list
-https://komarev.com/ghpvc/?username=twsyas/to-do-list/edit/main/README.md
+
 ## FLASK FRAMEWORK:
 <a href="https://flask-login.readthedocs.io/en/latest/">funções de login</a>,
 <a href="https://flask-login.readthedocs.io/en/latest/](https://github.com/pallets/werkzeug/blob/main/src/werkzeug/security.py)https://github.com/pallets/werkzeug/blob/main/src/werkzeug/security.py">werkzeug.security</a>,
